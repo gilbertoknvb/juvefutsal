@@ -1,0 +1,79 @@
+<html lang="pt">
+
+<head>
+  <!-- HTML 4 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- HTML5 -->
+  <meta charset="utf-8" />
+<link rel="stylesheet" href="estilo.css"/>
+
+  <title> Gilberto </title>
+  
+
+  <!-- scriprt trabalha com informações-->
+
+  <script> 
+    function minhaprimeirafunction(texto) { alert(texto) }
+    function minhasegundafunction()
+    // document lê tudo, pega os 
+    {
+      var minhavariavel = document.getElementById("txtcadastro").value;
+      var raizquadrada = minhavariavel * minhavariavel;
+      alert(raizquadrada);
+
+    }
+    function meuselect() {
+      var nome = document.getElementById("meuselect").value;
+      alert(nome);
+      alert("ai aiaiaiaiia");
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1>JOGADORES
+
+
+  </h1>
+  <ul>
+    <!--SEMPRE CENTRALIZAR CONFIGURAÇÕES NO CSS / STYLE-->
+    <li title="melhor do mundo">Cristiano Ronaldo</li>
+    <li>Maradona</li>
+    <li>Van der Sar</li>
+    <li>
+      <a href="https://pt.wikipedia.org/wiki/Ronaldinho_Ga%C3%BAcho">
+        <img src="https://img.estadao.com.br/resources/jpg/0/1/1502720515610.jpg" alt="Ronaldinho" width="204" height="142" title="r10">
+      </a>
+    </li>
+
+    <li>Adriano Imperador</li>
+    <li>Batistuta</li>
+
+  </ul>
+  <div class="minhaprimeiraclasse">
+    Cadastro
+
+
+
+    <input type="text" id="txtcadastro">
+    <select id="meuselect" onchange='meuselect()'>
+
+      <option>Gustavo</option>
+      <option>Juliana</option>
+      <option>Gilberto</option>
+
+    </select>
+    <button onclick='minhasegundafunction()'>Salvar</button>
+
+    <!--onclick quando clica-->
+  </div>
+  <div id="divresultado">
+
+  </div>
+
+  <a href="https://www.globo.com/">CLIQUE AQUI</a>
+
+</body>
+
+</html>
