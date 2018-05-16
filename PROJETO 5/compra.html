@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .classe1 {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body class="classe1">
+
+    <div>
+        <h1>VENDA</h1>
+
+
+        <input type="checkbox" onchange="funcaoimagem()" id="cbbike">Bicicleta
+        <input type="checkbox" onchange="funcaoimagem()" id="cbcar">Carro
+
+        <img id="imgbicicleta">
+        <img id="imgcarro">
+
+
+    </div>
+
+
+    <script>
+
+        function funcaoimagem() {
+
+            // var bicicleta = document.getElementById("biclicleta").value;
+            // bicicleta = src = "bicicleta-mountain-bike-aro-27-5-rockrider-560-btwin_158805884_2077028.jpg";
+            // var carro = document.getElementById("carro").value;
+            // carro = src = "maxresdefault.jpg";
+            // var input = document.getElementById("imagem").value;
+
+            if (document.getElementById("cbbike").checked) {
+                document.getElementById("imgbicicleta").src = "imagens/bicicleta-mountain-bike-aro-27-5-rockrider-560-btwin_158805884_2077028.jpg";
+
+            }
+            else {
+                document.getElementById("imgbicicleta").src = "";
+
+            }
+
+            if (document.getElementById("cbcar").checked) {
+                document.getElementById("imgcarro").src = "imagens/maxresdefault.jpg"
+            }
+            else {
+                document.getElementById("imgcarro").src = "";
+            }
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+
+</html>
