@@ -4,13 +4,26 @@
 <head>
     <style>
         .classe1 {
-            background-color: aqua;
+            background-color: orangered;
+            color: azure;
+        }
+
+        .classe2 {
+            float: left;
+            border: 0px;
+
+
+
+        }
+
+        .classe3 {
+            background-color: red;
         }
     </style>
 
 </head>
 
-<body class="classe1">
+<body id="body" class="classe1">
 
     <div>
         <h1>VENDA</h1>
@@ -18,11 +31,22 @@
 
         <input type="checkbox" onchange="funcaoimagem()" id="cbbike">Bicicleta
         <input type="checkbox" onchange="funcaoimagem()" id="cbcar">Carro
+        <button onclick="funcaoclicar()">CLICK HERE</button>
+        <p></p>
+        <img id="imgbicicleta" class="classe2" width="400" height="200px" alt "BIKE">
+        <img id="imgcarro" class="classe2" width="400px" height="200px" alt "CAR">
+    </div>
 
-        <img id="imgbicicleta">
-        <img id="imgcarro">
+    <div>
+        <p>
+            <img onmouseover="funcaobotao()" id="guts" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UaaFA8Gucm7cP2W637u3wXBtLXny-CJ132HHOhiug6SEscKR">
+        </p>
 
+    </div>
 
+    <div>
+        <input type="text" id="caixatexto">
+        <button onclick="cor()">CLICK HERE</button>
     </div>
 
 
@@ -55,8 +79,37 @@
 
         }
 
+        function funcaoclicar() {
+            alert(document.getElementById("guts").src);
+        }
 
 
+        function funcaobotao() {
+            (document.getElementById("guts").src) = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHIU42M6T4farBX9iUPfcKDOv6xmChUAtNp0fQYJICWFud49Adg"
+
+        }
+
+
+
+
+
+
+
+        function consolelog() {
+            console.log("GUSTAVO NEVER WIN ON FIFA");
+        }
+        function textbox() {
+            alert(document.getElementById("caixatexto").value);
+        }
+
+        function corbody() {
+            document.getElementById("body").style.backgroundColor = "red";
+
+        }
+
+        function cor() {
+            document.getElementById("body").style.backgroundColor = document.getElementById("caixatexto").value;
+        } 
     </script>
 
 </body>
